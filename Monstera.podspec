@@ -1,15 +1,8 @@
-#
-# Be sure to run `pod lib lint Monstera.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Monstera'
   s.version          = '0.1.0'
   s.summary          = 'A short description of Monstera.'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +11,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Basic class extension for daily development.
                        DESC
 
   s.homepage         = 'https://github.com/jooyyy/Monstera'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jooyyy' => 'joy060102@gmail.com' }
   s.source           = { :git => 'https://github.com/jooyyy/Monstera.git', :tag => s.version.to_s }

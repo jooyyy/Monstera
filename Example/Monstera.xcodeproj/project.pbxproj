@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368D52882726BFAF00EC3936 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D52872726BFAF00EC3936 /* Data.swift */; };
+		368D528A2726C05300EC3936 /* Int+Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D52892726C05300EC3936 /* Int+Price.swift */; };
+		368D528C2726C08100EC3936 /* Int64+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D528B2726C08100EC3936 /* Int64+Time.swift */; };
 		51FA987C02FDE2ECBEF1689F /* Pods_Monstera_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AB44DD3CA0C282B3459ADC /* Pods_Monstera_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,7 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18DF77F7C670E665489C23F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		18DF77F7C670E665489C23F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		368D52872726BFAF00EC3936 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		368D52892726C05300EC3936 /* Int+Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Price.swift"; sourceTree = "<group>"; };
+		368D528B2726C08100EC3936 /* Int64+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int64+Time.swift"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Monstera_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monstera_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +45,9 @@
 		607FACE51AFB9204008FA782 /* Monstera_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Monstera_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		888CC9484D88E69655CADA89 /* Monstera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Monstera.podspec; path = ../Monstera.podspec; sourceTree = "<group>"; };
+		888CC9484D88E69655CADA89 /* Monstera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Monstera.podspec; path = ../Monstera.podspec; sourceTree = "<group>"; };
 		88AB44DD3CA0C282B3459ADC /* Pods_Monstera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monstera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90CFAC04A5C719C02B83729F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		90CFAC04A5C719C02B83729F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B52C305315964232FB710EA1 /* Pods-Monstera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monstera_Example.release.xcconfig"; path = "Target Support Files/Pods-Monstera_Example/Pods-Monstera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D8AB5CB8159D362DEB39B675 /* Pods-Monstera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monstera_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Monstera_Tests/Pods-Monstera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E19BB190CBB08F95E7490DAE /* Pods_Monstera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monstera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,15 +83,25 @@
 				D8AB5CB8159D362DEB39B675 /* Pods-Monstera_Tests.debug.xcconfig */,
 				E4E3ECF6BCB04D896B99A64B /* Pods-Monstera_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		368D52862726BFA300EC3936 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				368D52872726BFAF00EC3936 /* Data.swift */,
+				368D52892726C05300EC3936 /* Int+Price.swift */,
+				368D528B2726C08100EC3936 /* Int64+Time.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				368D52862726BFA300EC3936 /* Sources */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for Monstera */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				34DAB786B83DC7F386848462 /* Pods */,
@@ -102,7 +118,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for Monstera */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -112,7 +128,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for Monstera";
+			name = Example;
 			path = Monstera;
 			sourceTree = "<group>";
 		};
@@ -228,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,7 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				368D52882726BFAF00EC3936 /* Data.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				368D528A2726C05300EC3936 /* Int+Price.swift in Sources */,
+				368D528C2726C08100EC3936 /* Int64+Time.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
